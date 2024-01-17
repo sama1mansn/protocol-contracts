@@ -7,15 +7,15 @@ const OFF = 0;
  */
 module.exports = {
   env: {
-    browser: false,
-    es2021: true,
+    browser: true,
+    es2021: false,
     mocha: true,
-    node: true,
+    node: false,
   },
   extends: ["plugin:prettier/recommended"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 25,
   },
   plugins: ["@typescript-eslint", "prettier", "simple-import-sort", "sort-keys-fix", "typescript-sort-keys"],
   rules: {
